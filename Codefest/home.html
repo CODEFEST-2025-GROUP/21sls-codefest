@@ -1,0 +1,91 @@
+<html>
+<head>
+<style>
+h1,h2{text-align: center;}
+.about-paragraph {
+color: black;
+background-image: url('about us.jpeg'); 
+background-position: center;
+padding: 20px;
+margin: 2%;
+background-repeat: no-repeat;
+background-size: cover;
+}
+.button {
+color: #000000;
+padding: 10px 20px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+}
+.button2 {
+background-color: maroon;
+}
+.button3 {
+background-color: goldenrod;
+    }
+
+    .button4 {
+      background-color: maroon;
+    }
+
+.button5{background-color: blue;}
+
+    .play-button {
+      background-color: goldenrod;
+      color: maroon;
+      font-weight: bold;
+      margin: 20px auto;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <audio id="schoolAnthem" loop>
+    <source src="assets/audio/Bandarawela central college school anthem  (school song).mp3" type="audio/mpeg">
+  </audio>
+
+  <button class="button play-button" onclick="playAnthem()">Play School Anthem</button>
+
+  <h1 style="color: goldenrod; background-color: maroon; margin: 2%;">Welcome to BMMV Student Hub</h1>
+  <h2 style="color: goldenrod; background-color: maroon; margin: 2%;">About us</h2>
+  <p class="about-paragraph"><i><b>
+    Bandarawela Central College: A Beacon of Learning in the Uva Hills<br>
+    Nestled among the misty hills of Bandarawela, Bandarawela Central 
+    College stands as a proud monument of Sri Lanka’s educational heritage.<br>
+    Founded in 1942 during the throes of World War II, the school began
+     as a humble branch of Royal College, Colombo. Over the decades, it
+      evolved into a fully-fledged national institution,
+       earning a reputation not just for academic rigor
+     but for shaping well-rounded individuals.
+  </b></i></p>
+
+  
+  <button class="button button3" onclick="giveFeedback()">Give Feedback</button>
+  <button class="button button4" onclick="studentTeacherConnections()">Student Teacher Connections</button>
+  <button class="button button5" onclick="enews()">E news</button>
+  <script>
+    function playAnthem() {
+      const anthem = document.getElementById("schoolAnthem");
+      anthem.play();
+    }
+
+
+    function giveFeedback() {
+      window.location.href = "reply.html";
+    }
+
+    function studentTeacherConnections() {
+      window.location.href = "student teacher connections.html";
+    }
+    function enews() {
+      window.location.href = "E news.html";
+    }
+  </script>
+
+</body>
+</html>
